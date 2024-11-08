@@ -1,0 +1,65 @@
+/* Basic CSS reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.button.operation {
+    background-color: #ffab40;
+    color: #fff;
+}
+
+.button.equal {
+    background-color: #4caf50;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.button.clear {
+    background-color: #f44336;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+}
